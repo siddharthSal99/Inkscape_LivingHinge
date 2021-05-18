@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
-  <_name>Living Hinge</_name>
+  <_name>Living Hinge Generator</_name>
   <id>org.lvl1.living_hinge</id>
 
-  <dependency type="executable" location="extensions">living_hinge.py</dependency>
+  <dependency type="executable" location="extensions">living_hinge_generator.py</dependency>
   <dependency type="executable" location="extensions">simpletransform.py</dependency>
   <dependency type="executable" location="extensions">inkex.py</dependency>
 
@@ -17,7 +17,7 @@
   <param name="cut_length" type="float" precision="2"  _gui-text="cut length (y)" min="1" max="1000">19.0</param>
   <param name="gap_length" type="float" precision="2" _gui-text="gap length (y)" min="1" max="1000">3.0</param> 
   <param name="sep_distance" type="float" precision="2" _gui-text="separation distance (x)" min="1" max="1000">1.5</param>
-  <param name="help_text" type="description">This extension renders the lines to make the cuts for a living hinge. The cuts run in the y-direction. 
+  <param name="help_text" type="description">Sid's Version 
 cut length: the length of each cut in the y-direction. 
 gap length: the separation between cut lines in the y-direction. 
 separation distance: the separation distance in the x-direction between adjacent sets of cut lines. 
@@ -31,6 +31,6 @@ The entered value for cut length will be adjusted so that an integer number of w
     </effects-menu>
   </effect>
   <script>
-    <command reldir="extensions" interpreter="python">living_hinge.py</command>
+    <command reldir="extensions" interpreter="python">living_hinge_generator.py</command>
   </script>
 </inkscape-extension>
